@@ -1,0 +1,36 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Environment Variables — contains passwords
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Raw data — too large for GitHub
+data/raw/
+data/GiveMeSomeCredit/
+
+# Processed data — can be regenerated
+data/processed_data/
+
+# EDA report — too large for GitHub
+data/eda_report.html
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
