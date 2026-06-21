@@ -7,14 +7,16 @@ import matplotlib.pyplot as plt
 import sys
 import os
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
 
 from src.preprocess import preprocess_input
 from src.predict import predict, model
 
 @st.cache_data
 def load_training_data():
-    return pd.read_csv('C:/Users/comp/OneDrive/Desktop/LABS/Credit Card loan ML project/data/processed_data/X_train.csv')
+    path = os.path.join(BASE_DIR, 'data', 'processed_data', 'X_train.csv')
+    return pd.read_csv(path)
 
 X_train_res = load_training_data()
 
