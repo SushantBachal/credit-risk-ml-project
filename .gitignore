@@ -19,9 +19,6 @@ __pycache__/
 data/raw/
 data/GiveMeSomeCredit/
 
-# Processed data — can be regenerated
-data/processed_data/
-
 # EDA report — too large for GitHub
 data/eda_report.html
 
